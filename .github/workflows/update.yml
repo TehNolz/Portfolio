@@ -21,6 +21,9 @@ jobs:
 
         - name: Fix 404 page
           run: cp build/wwwroot/index.html build/wwwroot/404.html
+          
+        - name: Fix Jekyll conflict
+          run: touch build/wwwroot/.nojekyll
 
         - name: Publish website
           if: ${{ github.ref == 'refs/heads/master' }}
