@@ -1,0 +1,8 @@
+﻿@page "/"
+@using Markdig
+@using System.Reflection
+@using System.IO
+
+<h1>Hello, world!</h1>
+
+@((MarkupString)Markdown.ToHtml(new StreamReader(Assembly.GetExecutingAssembly().GetManifestResourceStream("Portfolio.Pages.Test.md")).ReadToEnd()))
