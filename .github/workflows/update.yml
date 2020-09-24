@@ -19,6 +19,9 @@ jobs:
         - name: Generate website
           run: dotnet publish Portfolio/Portfolio.csproj --configuration Release --output build
 
+        - name: Fix 404 page
+          run: cp build/wwwroot/index.html build/wwwroot/404.html
+
         - name: Publish website
           if: ${{ github.ref == 'refs/heads/master' }}
           uses: JamesIves/github-pages-deploy-action@releases/v3
@@ -28,6 +31,3 @@ jobs:
             BRANCH: gh-pages
             FOLDER: build/wwwroot
             SINGLE_COMMIT: true
-            
-        - name: Fix 404 page
-          run: cp release/wwwroot/index.html release/wwwroot/404.html
