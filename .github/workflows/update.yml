@@ -26,7 +26,7 @@ jobs:
             ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
             BASE_BRANCH: master
             BRANCH: gh-pages
-            FOLDER: build/wwwroot
+            FOLDER: /home/runner/work/Internship3/Internship3/Portfolio/bin/Release/netstandard2.1/wwwroot
             SINGLE_COMMIT: true
             
         - name: Fix 404 page
