@@ -17,7 +17,7 @@ jobs:
           run: dotnet test
 
         - name: Generate website
-          run: dotnet publish myapp.csproj --configuration Release
+          run: dotnet publish Portfolio.csproj --configuration Release
 
         - name: Publish website
           if: ${{ github.ref == 'refs/heads/master' }}
