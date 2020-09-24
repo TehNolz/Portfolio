@@ -21,13 +21,13 @@ jobs:
 
         - name: Publish website
           if: ${{ github.ref == 'refs/heads/master' }}
-          uses: peaceiris/actions-gh-pages@v3.6.1
+          uses: JamesIves/github-pages-deploy-action@releases/v3
           with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_branch: gh-pages
-            allow_empty_commit: false
-            keep_files: false
-            force_orphan: true
+            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+            BASE_BRANCH: master
+            BRANCH: gh-pages
+            FOLDER: build/wwwroot
+            SINGLE_COMMIT: true
             
         - name: Fix 404 page
           run: cp release/wwwroot/index.html release/wwwroot/404.html
