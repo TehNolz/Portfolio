@@ -2,9 +2,9 @@
 @using Markdig
 @using System.Reflection
 @using System.IO
+@inject NavigationManager NavigationManager
 
-<h1>Hello, world!</h1>
-@foreach (var manifestResourceName in Assembly.GetExecutingAssembly().GetManifestResourceNames())
+@code
 {
-    <p>@manifestResourceName</p>
+
 }

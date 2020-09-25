@@ -1,6 +1,7 @@
 ﻿@page "/Content/{Document}"
 @page "/Content/{Category}/{Document}"
 @page "/Content/{Category}/{Folder}/{Document}"
+@using System.Diagnostics
 
 @inject IDocumentService DocumentService
 
@@ -12,6 +13,7 @@
     }
     else
     {
+        Debug.Print($"Can't find file: {GetPath()}");
         <_404/>
     }
 }

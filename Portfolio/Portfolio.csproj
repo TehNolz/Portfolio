@@ -10,17 +10,37 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="wwwroot\Assets\Cursus.PNG" />
     <None Remove="Pages\Content\Stage3\Index.md" />
     <None Remove="Pages\Content\Stage3\Leerdoelen\1.md" />
+    <None Remove="Pages\Content\Stage3\Leerdoelen\10.md" />
+    <None Remove="Pages\Content\Stage3\Leerdoelen\2.md" />
     <None Remove="Pages\Content\Stage3\Leerdoelen\3.md" />
-    <None Remove="Pages\Test.md" />
+    <None Remove="Pages\Content\Stage3\Leerdoelen\4.md" />
+    <None Remove="Pages\Content\Stage3\Leerdoelen\5.md" />
+    <None Remove="Pages\Content\Stage3\Leerdoelen\6.md" />
+    <None Remove="Pages\Content\Stage3\Leerdoelen\7.md" />
+    <None Remove="Pages\Content\Stage3\Leerdoelen\8.md" />
+    <None Remove="Pages\Content\Stage3\Leerdoelen\9.md" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="wwwroot\Assets\Cursus.PNG" />
     <EmbeddedResource Include="Pages\Content\Stage3\Index.md" />
     <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\1.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\2.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\4.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\5.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\10.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\6.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\9.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\8.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\7.md" />
     <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\3.md" />
-    <EmbeddedResource Include="Pages\Test.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Assets\Stageplan.docx" />
   </ItemGroup>
 	
 	<ItemGroup>
