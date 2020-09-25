@@ -30,12 +30,20 @@ namespace Portfolio
     {
         public string GetDocument(string path, bool converted = true)
         {
+            //Get the document, if it exists.
             var document = Assembly.GetExecutingAssembly()
                 .GetManifestResourceStream($"Portfolio.Pages.Content.{path}.md");
 
+            //If it doesn't exist, this path may be referring to a folder instead. Check if there's an Index.md file at this path and retrieve it if it does.
             if (document == null)
-                return null;
+            {
+                document = Assembly.GetExecutingAssembly()
+                    .GetManifestResourceStream($"Portfolio.Pages.Content.{path}.Index.md");
+                if (document == null)
+                    return null;
+            }
 
+            //Convert the content to HTML if requested and return it.
             string content = new StreamReader(document).ReadToEnd();
             return converted ? Markdown.ToHtml(content) : content;
         }
