@@ -23,7 +23,7 @@ jobs:
           run: cp build/wwwroot/index.html build/wwwroot/404.html
           
         - name: Fix base tag
-          run: sed -i 's/<base href="\/" \/>/<base href="\/Internship3\/" \/>/g' build/wwwroot/index.html
+          run: sed -i 's/<base href="\/" \/>/<base href="\/Portfolio\/" \/>/g' build/wwwroot/index.html
           
         - name: Fix Jekyll conflict
           run: touch build/wwwroot/.nojekyll
