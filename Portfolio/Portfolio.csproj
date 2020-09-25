@@ -5,11 +5,21 @@
     <RazorLangVersion>3.0</RazorLangVersion>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
   <ItemGroup>
+    <None Remove="Pages\Content\Stage3\Index.md" />
+    <None Remove="Pages\Content\Stage3\Leerdoelen\1.md" />
+    <None Remove="Pages\Content\Stage3\Leerdoelen\3.md" />
     <None Remove="Pages\Test.md" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Pages\Content\Stage3\Index.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\1.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\3.md" />
     <EmbeddedResource Include="Pages\Test.md" />
   </ItemGroup>
 	

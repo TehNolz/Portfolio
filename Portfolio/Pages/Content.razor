@@ -1,0 +1,36 @@
+﻿@page "/Content/{Document}"
+@page "/Content/{Category}/{Document}"
+@page "/Content/{Category}/{Folder}/{Document}"
+
+@inject IDocumentService DocumentService
+
+@{
+    var document = DocumentService.GetDocument(GetPath());
+    if (document != null)
+    {
+        <div>@((MarkupString)document)</div>
+    }
+    else
+    {
+        <_404/>
+    }
+}
+
+@code {
+    [Parameter]
+    public string Folder { get; set; }
+    [Parameter]
+    public string Document { get; set; }
+    [Parameter]
+    public string Category { get; set; }
+
+    public string GetPath()
+    {
+        var path = Document;
+        if (Folder != null)
+            path = $"{Folder}.{path}";
+        if (Category != null)
+            path = $"{Category}.{path}";
+        return path;
+    }
+}
