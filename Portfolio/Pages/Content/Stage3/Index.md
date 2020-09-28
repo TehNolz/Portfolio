@@ -31,7 +31,7 @@ Aan het begin van mijn stage heb ik meerdere leerdoelen voor mijzelf gesteld. De
   * [Leerdoel 8 - CI/CD](Content/Stage3/Leerdoelen/8)
 * Professional Skills
   * [Leerdoel 9 - Regels & Procedures](Content/Stage3/Leerdoelen/9)
-  * [Leerdoel 10 - Regels & Procedures](Content/Stage3/Leerdoelen/10)
+  * [Leerdoel 10 - Design](Content/Stage3/Leerdoelen/10)
 
 ## Stageplan
 Aan het begin van mijn stage heb ik een stageplan opgesteld. Dit stageplan geeft een korte beschrijving van het stagebedrijf, mijn stageopdracht, en mijn leerdoelen. Ook bevat het een planning over wanneer ik welke leerdoelen verwachtte te halen.
