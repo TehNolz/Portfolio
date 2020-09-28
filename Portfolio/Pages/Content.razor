@@ -6,6 +6,7 @@
 @inject IDocumentService DocumentService
 
 @{
+    //Retrieve the markdown document. If it doesn't exist, show a 404 page and print the path to the console (for debugging)
     var document = DocumentService.GetDocument(GetPath());
     if (document != null)
     {
@@ -19,13 +20,26 @@
 }
 
 @code {
-    [Parameter]
-    public string Folder { get; set; }
-    [Parameter]
-    public string Document { get; set; }
+    /// <summary>
+    /// The category the document is located in.
+    /// </summary>
     [Parameter]
     public string Category { get; set; }
+    /// <summary>
+    /// The folder the document is located in.
+    /// </summary>
+    [Parameter]
+    public string Folder { get; set; }
+    /// <summary>
+    /// The document name.
+    /// </summary>
+    [Parameter]
+    public string Document { get; set; }
 
+    /// <summary>
+    /// Builds a document path based on the given URL parameters
+    /// </summary>
+    /// <returns></returns>
     public string GetPath()
     {
         var path = Document;

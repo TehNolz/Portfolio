@@ -1,25 +1,53 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
+﻿@*<div class="top-row pl-4 navbar navbar-light">
     <a class="navbar-brand" href="">Portfolio</a>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
-</div>
+</div>*@
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <ul class="nav flex-column">
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-            <NavLink class="nav-link" href="Content/Stage3" Match="NavLinkMatch.Prefix">
-                <span class="oi oi-home" aria-hidden="true"></span> 3rdejaars Stage
-            </NavLink>
-            <NavLink class="nav-link" href="Contact" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Contact
-            </NavLink>
-        </li>
-    </ul>
-</div>
+@using Microsoft.AspNetCore.Components
+
+<MatNavMenu Style="background: lightgray;">
+    <MatNavItem><MatIcon Icon="house"></MatIcon>&nbsp; Home </MatNavItem>
+    <MatDivider></MatDivider>
+    <MatNavSubMenu>
+        <MatNavSubMenuHeader>
+            <MatNavItem AllowSelection="false"><MatIcon Icon="all_inbox"></MatIcon>&nbsp; 3rdejaars Stage</MatNavItem>
+        </MatNavSubMenuHeader>
+        <MatNavSubMenuList>
+            <MatNavItem Href="#">Item 3.A&nbsp; <MatIcon Icon="backup"></MatIcon></MatNavItem>
+            <MatNavItem>Item 3.B&nbsp; <MatIcon Icon="build"></MatIcon></MatNavItem>
+            <MatNavSubMenu>
+                <MatNavSubMenuHeader>
+                    <MatNavItem AllowSelection="false"><MatIcon Icon="all_inbox"></MatIcon>Leerdoelen</MatNavItem>
+                </MatNavSubMenuHeader>
+                <MatNavSubMenuList>
+                    <MatNavItem Href="#">Item 3.A&nbsp; <MatIcon Icon="backup"></MatIcon></MatNavItem>
+                    <MatNavItem>Item 3.B&nbsp; <MatIcon Icon="build"></MatIcon></MatNavItem>
+                    <MatNavItem>Item 3.C&nbsp; <MatIcon Icon="explore"></MatIcon></MatNavItem>
+                </MatNavSubMenuList>
+            </MatNavSubMenu>
+        </MatNavSubMenuList>
+    </MatNavSubMenu>
+    <MatDivider></MatDivider>
+    <MatNavItem><MatIcon Icon="alternate_email"></MatIcon>Contact</MatNavItem>
+</MatNavMenu>
+
+@*<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+        <ul class="nav flex-column">
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                    <span class="oi oi-home" aria-hidden="true"></span> Home
+                </NavLink>
+                <NavLink class="nav-link" href="Content/Stage3" Match="NavLinkMatch.Prefix">
+                    <span class="oi oi-home" aria-hidden="true"></span> 3rdejaars Stage
+                </NavLink>
+                <NavLink class="nav-link" href="Contact" Match="NavLinkMatch.All">
+                    <span class="oi oi-home" aria-hidden="true"></span> Contact
+                </NavLink>
+            </li>
+        </ul>
+    </div>*@
 
 @code {
     private bool collapseNavMenu = true;
@@ -29,5 +57,16 @@
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+
+
+    [Inject] IJSRuntime JS { get; set; }
+ 
+    bool navSubMenuOpenState;
+ 
+    async Task ClickMe()
+    {
+        Console.WriteLine("test");
+        await JS.InvokeAsync<object>("alert", "Successful OnClick!");
     }
 }
