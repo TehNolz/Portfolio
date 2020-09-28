@@ -19,11 +19,11 @@ jobs:
         - name: Generate website
           run: dotnet publish Portfolio/Portfolio.csproj --configuration Release --output build
 
-        - name: Fix 404 page
-          run: cp build/wwwroot/index.html build/wwwroot/404.html
-          
         - name: Fix base tag
           run: sed -i 's/<base href="\/" \/>/<base href="\/Portfolio\/" \/>/g' build/wwwroot/index.html
+
+        - name: Fix 404 page
+          run: cp build/wwwroot/index.html build/wwwroot/404.html
           
         - name: Fix Jekyll conflict
           run: touch build/wwwroot/.nojekyll
