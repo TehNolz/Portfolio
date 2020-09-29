@@ -1,7 +1,10 @@
 ﻿@page "/Contact"
 @using System.ComponentModel.DataAnnotations
 @using Markdig
-@inject IJSRuntime JsRuntime
+@using System.Text;
+@using Newtonsoft.Json;
+@using Newtonsoft.Json.Linq
+@inject HttpClient HttpClient
 @((MarkupString)Markdown.ToHtml(@"
 
 # Contact
@@ -26,16 +29,23 @@ Ook ben ik te bereiken via [email](mailto:n.vandekerkhof@outlook.com)
 	<MatButton Type="submit">Verzenden</MatButton>
 </EditForm>
 
-<MatSnackbar @bind-IsOpen="@popupOpen">
+<MatSnackbar @bind-IsOpen="@successOpen">
 	<MatSnackbarContent>Uw bericht is verzonden.</MatSnackbarContent>
 	<MatSnackbarActions>
-		<MatButton Raised="true" OnClick="()=>popupOpen = false">Ok</MatButton>
+		<MatButton Raised="true" OnClick="()=>successOpen = false">Ok</MatButton>
+	</MatSnackbarActions>
+</MatSnackbar>
+<MatSnackbar @bind-IsOpen="@failOpen">
+	<MatSnackbarContent><MatIcon></MatIcon>Het is niet gelukt om het bericht te versturen. Probeer het later nog een keer, of stuur mij een email.</MatSnackbarContent>
+	<MatSnackbarActions>
+		<MatButton Raised="true" OnClick="()=>failOpen = false">Ok</MatButton>
 	</MatSnackbarActions>
 </MatSnackbar>
 
 @code {
 
-	private bool popupOpen;
+	private bool successOpen;
+	private bool failOpen;
 
 	private class InputForm
 	{
@@ -49,10 +59,28 @@ Ook ben ik te bereiken via [email](mailto:n.vandekerkhof@outlook.com)
 
 	private InputForm Input { get; set; } = new InputForm();
 
-	private void Send()
+	private async void Send()
 	{
-		//TODO: Actually send the message lol.
-		popupOpen = true;
+		var message = new JObject()
+		{
+			{"embeds", new JArray()
+				{
+					new JObject()
+					{
+						{"title", Input.Email },
+						{"description", Input.Content },
+						{"color", 44337}
+					}
+				}
+			}
+		};
+		var response = await HttpClient.PostAsync(
+			"https://discordapp.com/api/webhooks/760435526674153482/HNgdDYva2cITN_R7Os9P3OExzBdqqiwH_bWLmQVdUO2Mhs3GtF-GOAo6B0LovbMXjiA2",
+			new StringContent(message.ToString(Formatting.None), Encoding.UTF8, "application/json")
+		);
+
+		successOpen = response.IsSuccessStatusCode;
+		failOpen = !successOpen;
 		this.StateHasChanged();
 	}
 }
