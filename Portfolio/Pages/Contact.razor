@@ -2,7 +2,6 @@
 @using System.ComponentModel.DataAnnotations
 @using Markdig
 @inject IJSRuntime JsRuntime
-
 @((MarkupString)Markdown.ToHtml(@"
 
 # Contact
@@ -12,41 +11,48 @@ Ook ben ik te bereiken via [email](mailto:n.vandekerkhof@outlook.com)
 "))
 
 <EditForm Model="@Input" OnValidSubmit="Send">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
+	<DataAnnotationsValidator />
+	<ValidationSummary />
 
-    <p></p>
-    Emailaddress
-    <p></p>
-    <InputText @bind-Value="Input.Email"></InputText>
-    <p></p>
-    Uw bericht
-    <p></p>
-    <InputTextArea @bind-Value="Input.Content"></InputTextArea>
-    <p></p>
-    <button type="submit">Versturen</button>
+	<p></p>
+	Emailaddress
+	<p></p>
+	<InputText @bind-Value="Input.Email"></InputText>
+	<p></p>
+	Uw bericht
+	<p></p>
+	<InputTextArea @bind-Value="Input.Content"></InputTextArea>
+	<p></p>
+	<MatButton Type="submit">Verzenden</MatButton>
 </EditForm>
+
+<MatSnackbar @bind-IsOpen="@popupOpen">
+	<MatSnackbarContent>Uw bericht is verzonden.</MatSnackbarContent>
+	<MatSnackbarActions>
+		<MatButton Raised="true" OnClick="()=>popupOpen = false">Ok</MatButton>
+	</MatSnackbarActions>
+</MatSnackbar>
 
 @code {
 
-    private class InputForm
-    {
-        [Required(ErrorMessage = "Een emailaddress is verplicht.")]
-        [EmailAddress(ErrorMessage = "Dit is geen geldig emailaddress.")]
-        public string Email { get; set; }
+	private bool popupOpen;
 
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Lege berichten zijn niet toegestaan.")]
-        public string Content { get; set; }
-    }
+	private class InputForm
+	{
+		[Required(ErrorMessage = "Een emailaddress is verplicht.")]
+		[EmailAddress(ErrorMessage = "Dit is geen geldig emailaddress.")]
+		public string Email { get; set; }
 
-    private InputForm Input { get; set; } = new InputForm();
+		[Required(AllowEmptyStrings = false, ErrorMessage = "Lege berichten zijn niet toegestaan.")]
+		public string Content { get; set; }
+	}
 
-    /// <summary>
-    /// Sends the email.
-    /// </summary>
-    private void Send()
-    {
-        //TODO: Actually send the message lol.
-        JsRuntime.InvokeVoidAsync("alert", "Het bericht is verzonden.");
-    }
+	private InputForm Input { get; set; } = new InputForm();
+
+	private void Send()
+	{
+		//TODO: Actually send the message lol.
+		popupOpen = true;
+		this.StateHasChanged();
+	}
 }
