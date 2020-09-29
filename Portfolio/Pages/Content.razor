@@ -10,7 +10,7 @@
     var document = DocumentService.GetDocument(GetPath());
     if (document != null)
     {
-        <div>@((MarkupString)document)</div>
+        @((MarkupString)document)
     }
     else
     {

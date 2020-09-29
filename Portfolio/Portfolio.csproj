@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <None Remove="Pages\Content\Stage3\Evidence\3.md" />
+    <None Remove="Pages\Content\Stage3\Evidence\4.md" />
     <None Remove="wwwroot\Assets\Cursus.PNG" />
     <None Remove="Pages\Content\Stage3\Index.md" />
     <None Remove="Pages\Content\Stage3\Leerdoelen\1.md" />
@@ -27,6 +28,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Pages\Content\Stage3\Evidence\3.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Evidence\4.md" />
   </ItemGroup>
 
   <ItemGroup>
