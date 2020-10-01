@@ -1,34 +1,37 @@
-﻿@*<div class="top-row pl-4 navbar navbar-light">
-    <a class="navbar-brand" href="">Portfolio</a>
-    <button class="navbar-toggler" @onclick="ToggleNavMenu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-</div>*@
-
-<MatNavMenu Multi="true">
+﻿<MatNavMenu Multi="true">
 	<MatNavItem Href="" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="house"></MatIcon>&nbsp; Home </MatNavItem>
 	<MatDivider></MatDivider>
 	<MatNavSubMenu>
 		<MatNavSubMenuHeader>
-			<MatNavItem AllowSelection="false" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon="assignment"></MatIcon>&nbsp; 3rdejaars Stage</MatNavItem>
+			<MatNavItem NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon="assignment"></MatIcon>&nbsp; 3rdejaars Stage</MatNavItem>
 		</MatNavSubMenuHeader>
 		<MatNavSubMenuList>
-			<MatNavItem Href="Content/Stage3" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="build"></MatIcon>Inleiding&nbsp; </MatNavItem>
+			<MatNavItem Href="Content/Stage3" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="assignment_ind"></MatIcon>Inleiding&nbsp; </MatNavItem>
 			<MatNavSubMenu>
 				<MatNavSubMenuHeader>
-					<MatNavItem AllowSelection="false" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon="assignment_ind"></MatIcon>Leerdoelen</MatNavItem>
+					<MatNavItem><MatIcon Icon="assignment_ind"></MatIcon>Leerdoelen</MatNavItem>
 				</MatNavSubMenuHeader>
 				<MatNavSubMenuList>
-					<MatNavItem Href="Content/Stage3/Leerdoelen/1" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="bookmark"/>1 - SVN&nbsp; </MatNavItem>
-					<MatNavItem Href="Content/Stage3/Leerdoelen/2" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="bookmark"/>2 - Nieuwe Technologie&nbsp; </MatNavItem>
-					<MatNavItem Href="Content/Stage3/Leerdoelen/3" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="bookmark"/>3 - Projecten Analyseren&nbsp; </MatNavItem>
-					<MatNavItem Href="Content/Stage3/Leerdoelen/4" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="bookmark"/>4 - Advies&nbsp; </MatNavItem>
-					<MatNavItem Href="Content/Stage3/Leerdoelen/5" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="bookmark"/>5 - Testen&nbsp; </MatNavItem>
-					<MatNavItem Href="Content/Stage3/Leerdoelen/6" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="bookmark"/>6 - Ideeën uitwerken&nbsp; </MatNavItem>
-					<MatNavItem Href="Content/Stage3/Leerdoelen/7" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="bookmark"/>7 - Design Patterns&nbsp; </MatNavItem>
-					<MatNavItem Href="Content/Stage3/Leerdoelen/8" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="bookmark"/>8 - CI/CD&nbsp; </MatNavItem>
-					<MatNavItem Href="Content/Stage3/Leerdoelen/9" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="bookmark"/>9 - Regels & Procedures&nbsp; </MatNavItem>
-					<MatNavItem Href="Content/Stage3/Leerdoelen/10" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="bookmark"/>10 - Design&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/1" NavLinkMatch=NavLinkMatch.All><MatIcon Icon="bookmark" />1 - SVN&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/2" NavLinkMatch=NavLinkMatch.All><MatIcon Icon="bookmark" />2 - Nieuwe Technologie&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/3" NavLinkMatch=NavLinkMatch.All><MatIcon Icon="bookmark" />3 - Projecten Analyseren&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/4" NavLinkMatch=NavLinkMatch.All><MatIcon Icon="bookmark" />4 - Advies&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/5" NavLinkMatch=NavLinkMatch.All><MatIcon Icon="bookmark" />5 - Testen&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/6" NavLinkMatch=NavLinkMatch.All><MatIcon Icon="bookmark" />6 - Ideeën uitwerken&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/7" NavLinkMatch=NavLinkMatch.All><MatIcon Icon="bookmark" />7 - Design Patterns&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/8" NavLinkMatch=NavLinkMatch.All><MatIcon Icon="bookmark" />8 - CI/CD&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/9" NavLinkMatch=NavLinkMatch.All><MatIcon Icon="bookmark" />9 - Regels & Procedures&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/10" NavLinkMatch=NavLinkMatch.All><MatIcon Icon="bookmark" />10 - Design&nbsp; </MatNavItem>
+				</MatNavSubMenuList>
+			</MatNavSubMenu>
+			<MatNavSubMenu>
+				<MatNavSubMenuHeader>
+					<MatNavItem><MatIcon Icon="assignment_ind"></MatIcon>Bewijsmateriaal</MatNavItem>
+				</MatNavSubMenuHeader>
+				<MatNavSubMenuList>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/3" NavLinkMatch=NavLinkMatch.All><MatIcon Icon="bookmark" />3 - Projectanalyse CRM&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/4" NavLinkMatch=NavLinkMatch.All><MatIcon Icon="bookmark" />4 - Adviesrapport&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/6" NavLinkMatch=NavLinkMatch.All><MatIcon Icon="bookmark" />6 - Technisch Document&nbsp; </MatNavItem>
 				</MatNavSubMenuList>
 			</MatNavSubMenu>
 		</MatNavSubMenuList>

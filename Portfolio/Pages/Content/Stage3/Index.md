@@ -8,7 +8,7 @@ In 2009 is Ranshuijsen opgericht door Rim Ranshuijsen met als doel om samen met 
 
 De klanten van Ranshuijsen komen uit verschillende sectoren. Zo heeft Ranshuijsen bijvoorbeeld systemen ontwikkeld voor organisaties zoals het Veiligheidshuis Rotterdam-Rijnmond, RWV Advocaten, de Gemeente Rotterdam, en DHL.
 
-Ranshuijsen gebruikt voornamelijk Microsoft-technologieen zoals C#, .NET, en ASP.NET. Ook maken zij gebruik van frameworks zoals AngularJS.
+Ik heb dit bedrijf gekozen als stageplek omdat zij veel met Microsoft technologieen werken, zoals C#, .NET, en ASP.NET, wat mij erg aanspreekt. Ook is het kantoor zeer gemakkelijk te bereiken met het openbaar vervoer.
 
 ## Stageopdracht
 Ranshuijsen heeft op het moment een Custom Relations Management (CRM) systeem in gebruik. Hierin beheren zij allerlei verschillende zaken, waaronder;
