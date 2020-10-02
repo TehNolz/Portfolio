@@ -1,0 +1,14 @@
+﻿@using Portfolio.Components.CardList
+
+<div class="mat-layout-grid">
+	<div class="mat-layout-grid-inner">
+		@foreach(var entry in Cards){
+			<Card Content=@entry/>
+		}
+	</div>
+</div>
+
+@code {
+	[Parameter]
+	public IEnumerable<CardListEntry> Cards { get; set;}
+}

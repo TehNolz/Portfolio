@@ -13,6 +13,8 @@
     <None Remove="Pages\Content\Stage3\Evidence\3.md" />
     <None Remove="Pages\Content\Stage3\Evidence\4.md" />
     <None Remove="Pages\Content\Stage3\Evidence\6.md" />
+    <None Remove="Pages\Content\Studies.md" />
+    <None Remove="Pages\Home\Home.md" />
     <None Remove="wwwroot\Assets\Cursus.PNG" />
     <None Remove="Pages\Content\Stage3\Index.md" />
     <None Remove="Pages\Content\Stage3\Leerdoelen\1.md" />
@@ -28,13 +30,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Content\Stage3\Evidence\3.md" />
-    <EmbeddedResource Include="Pages\Content\Stage3\Evidence\4.md" />
-    <EmbeddedResource Include="Pages\Content\Stage3\Evidence\6.md" />
+    <EmbeddedResource Include="Pages\Content\Studies.md" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="wwwroot\Assets\Cursus.PNG" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Evidence\3.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Evidence\4.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Evidence\6.md" />
+    <EmbeddedResource Include="Pages\Home\Home.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="wwwroot\Assets\Images\Cursus.PNG" />
     <EmbeddedResource Include="Pages\Content\Stage3\Index.md" />
     <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\1.md" />
     <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\2.md" />

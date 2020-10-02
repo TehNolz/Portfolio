@@ -1,0 +1,29 @@
+﻿@using Markdig;
+@using System.Reflection
+@using System.IO
+@using System.Diagnostics
+
+@((MarkupString)document)
+
+@code {
+	[Parameter]
+	public string Name { get; set; }
+
+	private string document;
+
+	protected override void OnInitialized()
+	{
+		try
+		{
+			document = Markdown.ToHtml(new StreamReader(Assembly.GetExecutingAssembly().GetManifestResourceStream(Name)).ReadToEnd());
+		}
+		catch (ArgumentNullException)
+		{
+			foreach (var entry in Assembly.GetExecutingAssembly().GetManifestResourceNames())
+			{
+				Debug.Print(entry);
+			}
+			throw;
+		}
+	}
+}

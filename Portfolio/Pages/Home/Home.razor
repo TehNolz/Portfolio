@@ -1,0 +1,39 @@
+﻿@page "/"
+@using Markdig
+@using System.Reflection
+@using System.IO
+
+@using Microsoft.AspNetCore.Components
+
+
+<style>
+	.demo-mat-card {
+		max-width: 600px;
+		min-height: 100%
+	}
+
+	.demo-mat-card-content {
+		padding: 1rem;
+	}
+
+	.demo-mat-card-clean-margin {
+		margin: 10px;
+	}
+</style>
+
+<MarkdownDoc Name="Portfolio.Pages.Home.Home.md"/>
+
+<MatDivider/>
+
+<CardList Cards=@Cards/>
+
+@code {
+	public static List<CardListEntry> Cards = new List<CardListEntry>(){
+		new CardListEntry(){
+			Title = "3rdejaars Stage",
+			ImageURL = "/Assets/Images/Ranshuijsen.jpg",
+			Subtitle = "Mijn 3rdejaars stage bij Ranshuijsen",
+			HrefURL = "/Content/Stage3"
+		}
+	};
+}
