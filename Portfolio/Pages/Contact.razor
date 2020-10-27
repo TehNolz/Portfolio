@@ -9,7 +9,7 @@
 
 # Contact
 Mocht u contact met mij willen opnemen, dan kan dit via het onderstaande formulier. Ik zal zo snel mogelijk reageren.
-Ook ben ik te bereiken via [email](mailto:n.vandekerkhof@outlook.com)
+Ook ben ik te bereiken via [email](mailto:nvdkportfolio@outlook.com)
 
 "))
 
@@ -57,7 +57,7 @@ Ook ben ik te bereiken via [email](mailto:n.vandekerkhof@outlook.com)
 		public string Content { get; set; }
 	}
 
-	private InputForm Input { get; set; } = new InputForm();
+	private InputForm Input { get; } = new InputForm();
 
 	private async void Send()
 	{
@@ -81,6 +81,6 @@ Ook ben ik te bereiken via [email](mailto:n.vandekerkhof@outlook.com)
 
 		successOpen = response.IsSuccessStatusCode;
 		failOpen = !successOpen;
-		this.StateHasChanged();
+		StateHasChanged();
 	}
 }
