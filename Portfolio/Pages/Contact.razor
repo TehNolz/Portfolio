@@ -17,14 +17,10 @@ Ook ben ik te bereiken via [email](mailto:nvdkportfolio@outlook.com)
 	<DataAnnotationsValidator />
 	<ValidationSummary />
 
+	<MatTextField Label="Uw Emailaddress" @bind-Value="Input.Email" Required="true" Style="width: 50vw"></MatTextField>
 	<p></p>
-	Emailaddress
 	<p></p>
-	<InputText @bind-Value="Input.Email"></InputText> @*//TODO: Convert to Material https://samprof.github.io/MatBlazor/EditContext)*@
-	<p></p>
-	Uw bericht
-	<p></p>
-	<InputTextArea @bind-Value="Input.Content"></InputTextArea> @*//TODO: Convert to Material)*@
+	<MatTextField Label="Uw bericht" @bind-Value="Input.Content" Required="true" TextArea="true" Box="true" Style="height: 40vh; width: 50vw"></MatTextField>
 	<p></p>
 	<MatButton Type="submit">Verzenden</MatButton>
 </EditForm>

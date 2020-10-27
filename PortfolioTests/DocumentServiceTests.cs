@@ -15,10 +15,7 @@ namespace Portfolio.Tests
 		/// Creates the initial instance
 		/// </summary>
 		[TestInitialize]
-		public void Init()
-		{
-			DocumentService = new DocumentService();
-		}
+		public void Init() => DocumentService = new DocumentService();
 
 		/// <summary>
 		/// Checks whether DocumentService.GetDocument retrieves documents properly.

@@ -10,9 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Pages\Content\Stage3\Evidence\3.md" />
-    <None Remove="Pages\Content\Stage3\Evidence\4.md" />
-    <None Remove="Pages\Content\Stage3\Evidence\6.md" />
+    <None Remove="Pages\Content\Stage3\Bewijsmateriaal\3.md" />
+    <None Remove="Pages\Content\Stage3\Bewijsmateriaal\4.md" />
+    <None Remove="Pages\Content\Stage3\Bewijsmateriaal\6.md" />
     <None Remove="Pages\Content\Studies.md" />
     <None Remove="Pages\Home\Home.md" />
     <None Remove="wwwroot\Assets\Cursus.PNG" />
@@ -34,9 +34,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Content\Stage3\Evidence\3.md" />
-    <EmbeddedResource Include="Pages\Content\Stage3\Evidence\4.md" />
-    <EmbeddedResource Include="Pages\Content\Stage3\Evidence\6.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Bewijsmateriaal\4.md" />
+    <EmbeddedResource Include="Pages\Content\Stage3\Bewijsmateriaal\6.md" />
     <EmbeddedResource Include="Pages\Home\Home.md" />
   </ItemGroup>
 
