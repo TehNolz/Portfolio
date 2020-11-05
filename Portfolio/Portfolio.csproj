@@ -13,7 +13,9 @@
     <None Remove="Pages\Content\Stage3\Bewijsmateriaal\3.md" />
     <None Remove="Pages\Content\Stage3\Bewijsmateriaal\4.md" />
     <None Remove="Pages\Content\Stage3\Bewijsmateriaal\6.md" />
+    <None Remove="Pages\Content\Stage3\Stageplan.md" />
     <None Remove="Pages\Content\Studies.md" />
+    <None Remove="Pages\Content\Test.md" />
     <None Remove="Pages\Home\Home.md" />
     <None Remove="wwwroot\Assets\Cursus.PNG" />
     <None Remove="Pages\Content\Stage3\Index.md" />
@@ -30,12 +32,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Pages\Content\Stage3\Stageplan.md" />
     <EmbeddedResource Include="Pages\Content\Studies.md" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Pages\Content\Stage3\Bewijsmateriaal\4.md" />
     <EmbeddedResource Include="Pages\Content\Stage3\Bewijsmateriaal\6.md" />
+    <EmbeddedResource Include="Pages\Content\Test.md" />
     <EmbeddedResource Include="Pages\Home\Home.md" />
   </ItemGroup>
 

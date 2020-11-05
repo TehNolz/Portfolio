@@ -43,7 +43,7 @@ namespace Portfolio
 
 			//Convert the content to HTML if requested and return it.
 			string content = new StreamReader(document).ReadToEnd();
-			return converted ? Markdown.ToHtml(content) : content;
+			return converted ? Markdown.ToHtml(content, new MarkdownPipelineBuilder().UseAdvancedExtensions().Build()) : content;
 		}
 
 		public IEnumerable<string> ListDocuments(string directory = "Portfolio.Pages.Content") =>

@@ -10,7 +10,19 @@
     var document = DocumentService.GetDocument(GetPath());
     if (document != null)
     {
-        @((MarkupString)document)
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding-top: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin: 5px;
+            }
+        </style>
+        <div>
+            @((MarkupString)document)
+        </div>
     }
     else
     {

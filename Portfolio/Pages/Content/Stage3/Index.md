@@ -52,6 +52,4 @@ Aan het begin van mijn stage heb ik meerdere leerdoelen voor mijzelf gesteld. De
   * [Leerdoel 10 - Design](Content/Stage3/Leerdoelen/10)
 
 ## Stageplan
-Aan het begin van mijn stage heb ik een stageplan opgesteld. Dit stageplan geeft een korte beschrijving van het stagebedrijf, mijn stageopdracht, en mijn leerdoelen. Ook bevat het een planning over wanneer ik welke leerdoelen verwachtte te halen.
-
-[Klik hier om mijn stageplan te downloaden](Assets/Stageplan.docx)
+Aan het begin van mijn stage heb ik een stageplan opgesteld. Dit stageplan geeft een korte beschrijving van het stagebedrijf, mijn stageopdracht, en mijn leerdoelen. Ook bevat het een planning over wanneer ik welke leerdoelen verwachtte te halen. Dit stageplan is [hier te vinden](Content/Stage3/Stageplan)
