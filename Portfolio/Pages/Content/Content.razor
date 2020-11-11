@@ -1,62 +1,32 @@
-﻿@page "/Content/{Document}"
-@page "/Content/{Category}/{Document}"
-@page "/Content/{Category}/{Folder}/{Document}"
+﻿@page "/Content/{*Route}"
 @using System.Diagnostics
 
 @inject IDocumentService DocumentService
 
 @{
     //Retrieve the markdown document. If it doesn't exist, show a 404 page and print the path to the console (for debugging)
-    var document = DocumentService.GetDocument(GetPath());
+    var document = DocumentService.GetDocument(DocumentPath);
     if (document != null)
     {
-        <style>
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-                padding-top: 5px;
-                padding-left: 10px;
-                padding-right: 10px;
-                margin: 5px;
-            }
-        </style>
         @((MarkupString)document)
     }
     else
     {
-        Debug.Print($"Can't find file: {GetPath()}");
+        Debug.Print($"Can't find file: {Route}");
         <_404/>
     }
 }
 
 @code {
     /// <summary>
-    /// The category the document is located in.
+    /// The route the document is located at.
     /// </summary>
     [Parameter]
-    public string Category { get; set; }
-    /// <summary>
-    /// The folder the document is located in.
-    /// </summary>
-    [Parameter]
-    public string Folder { get; set; }
-    /// <summary>
-    /// The document name.
-    /// </summary>
-    [Parameter]
-    public string Document { get; set; }
+    public string Route { get; set; }
 
     /// <summary>
-    /// Builds a document path based on the given URL parameters
+    /// The path to the embedded resource
     /// </summary>
     /// <returns></returns>
-    public string GetPath()
-    {
-        var path = Document;
-        if (Folder != null)
-            path = $"{Folder}.{path}";
-        if (Category != null)
-            path = $"{Category}.{path}";
-        return path;
-    }
+    public string DocumentPath => Route.Replace('/', '.');
 }
