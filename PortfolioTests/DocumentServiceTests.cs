@@ -37,7 +37,7 @@ namespace Portfolio.Tests
 		/// <summary>
 		/// Checks whether DocumentService.ListDocuments can find all embedded Markdown files.
 		/// </summary>
-		[TestMethod()]
+		[TestMethod]
 		public void ListDocumentsTest()
 		{
 			var result = DocumentService.ListDocuments("PortfolioTests.TestContent").ToList();
