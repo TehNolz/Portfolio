@@ -19,7 +19,7 @@ Aan het begin van mijn stage heb ik meerdere leerdoelen voor mijzelf gesteld. De
 * Manage & Control
   * [Leerdoel 1 - SVN](Content/Stage3/Leerdoelen/1)
 * Analyseren
-  * [Leerdoel 2 - Nieuwe Technologie](Content/Stage3/Leerdoelen/2)
+  * [Leerdoel 2 - Deployment](Content/Stage3/Leerdoelen/2)
   * [Leerdoel 3 - Projecten Analyseren](Content/Stage3/Leerdoelen/3)
 * Adviseren
   * [Leerdoel 4 - Advies](Content/Stage3/Leerdoelen/4)
@@ -28,7 +28,7 @@ Aan het begin van mijn stage heb ik meerdere leerdoelen voor mijzelf gesteld. De
   * [Leerdoel 6 - Ideeën uitwerken](Content/Stage3/Leerdoelen/6)
 * Realiseren
   * [Leerdoel 7 - Design Patterns](Content/Stage3/Leerdoelen/7)
-  * [Leerdoel 8 - Deployment](Content/Stage3/Leerdoelen/8)
+  * [Leerdoel 8 - Nieuwe Technologie](Content/Stage3/Leerdoelen/8)
 * Professional Skills
   * [Leerdoel 9 - Regels & Procedures](Content/Stage3/Leerdoelen/9)
   * [Leerdoel 10 - Design](Content/Stage3/Leerdoelen/10)
