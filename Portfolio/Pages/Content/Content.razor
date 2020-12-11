@@ -7,7 +7,22 @@
     //Retrieve the markdown document. If it doesn't exist, show a 404 page and print the path to the console (for debugging)
     var document = DocumentService.GetDocument(DocumentPath);
     if (document != null)
-    {
+    {   
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding-top: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin: 5px;
+            }
+
+            img {
+                max-width: 80vw;
+                padding-right: 20vw;
+            }
+        </style>
         @((MarkupString)document)
     }
     else

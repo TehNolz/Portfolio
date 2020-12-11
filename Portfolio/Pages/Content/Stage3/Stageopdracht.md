@@ -86,15 +86,17 @@ Na ruim twee weken te werken, heb ik alle errors op weten te lossen, waardoor he
 Dat het systeem kan worden opgestart, betekent natuurlijk niet dat alles naar behoren werkt. Er zaten nog veel fouten in het systeem die ontdekt en opgelost moesten worden. Ik heb daarom ook een lange tijd besteed aan het testen van het systeem, en aan het oplossen van eventuele problemen die ik ben tegengekomen. De meest noemenswaardige problemen zijn hieronder beschreven;  
   
 1. Alle CSS bleek niet meer te werken. Dit kwam omdat de `.LESS` bestanden waar de CSS in stondt niet meer werden gecompileerd naar CSS. Een medewerker van Ranshuijser had mij verteld dat ik het beste al deze bestanden kon overzetten naar `.SCSS`, omdat Ranshuijsen dit tegenwoordig voor alle andere projecten is gaan gebruiken. Deze bestanden kon ik vervolgens laten compileren met behulp van de _WebCompiler_ extensie voor Visual Studio.  
-2. Er ontstonden errors op meerdere paginas omdat zij niet meer informatie over de huidig ingelogde gebruiker konden ophalen. Dit heb ik opgelost door deze paginas te koppelen aan het eerder genoemde vernieuwde inlogsysteem.
-3. De JavaScript code op sommige paginas kon niet meer communiceren met het CRM omdat zij niet meer data verstuurde op de manier zoals ASP.NET Core dit verwachte.
+2. Ook was er een probleem met de CSS van de inlogpagina. Het systeem weigerde deze naar de browser te sturen omdat de gebruiker op dat moment niet was ingelogd. Ik heb deze beveiliging uitgezet voor statische bestanden, zodat de CSS wel naar behoren werkt.
+3. Er ontstonden errors op meerdere paginas omdat zij niet meer informatie over de huidig ingelogde gebruiker konden ophalen. Dit heb ik opgelost door deze paginas te koppelen aan het eerder genoemde vernieuwde inlogsysteem.
+4. Ook in de JavaScript code van het CRM waren fouten opgetreden. Zo konden sommige paginas niet goed data versturen naar het CRM, en ontstonden er errors op andere paginas omdat bepaalde functies niet meer konden worden gevonden. Ook al heb ik zelf weinig ervaring met JavaScript, is het mij toch gelukt om deze errors op te lossen.
 
+==TODO Laatste paar dingen van stageopdracht==
 
 ## Feedback
 
 ## Reflectie
 
-# Planning
+# Planning & Reflectie
 Aan het begin van mijn stage heb ik een planning gemaakt die beschrijft hoe lang ik verwacht met elk van de bovenstaande taken bezig te zijn. Deze planning is als volgt;
 
 +---------+--------------------------------------+-----------------------------------------------------------------------------+
@@ -160,8 +162,9 @@ Aan het begin van mijn stage heb ik een planning gemaakt die beschrijft hoe lang
 | 10      | 1 t/m 10, Stageopdracht              | * Uitloopweek
 +---------+--------------------------------------+-----------------------------------------------------------------------------+  
   
-Om verschillende redenen is het mij niet gelukt om deze planning helemaal aan te houden.
+Het is mij echter niet gelukt om mij aan deze planning te houden. Dit komt omdat ik in het begin mij niet realizeerde hoe groot het CRM daadwerkelijk was. Mijn account op de productieomgeving heeft niet genoeg rechten om bij alle paginas te kunnen komen, waardoor het net leek alsof het systeem veel kleiner was dan ik dacht. Pas toen ik deze planning had ingelevert en echt met mijn stageopdracht begon, zag ik dat het systeem ruim 4 keer groter is dan ik eerst dacht. Ook bleek de migratie naar .NET 5 moeilijker en complexer dan ik had gedacht. Ik had niet verwacht dat ik zo veel verschillende errors zou tegengekomen, en dat sommige van deze errors zo lastig zouden zijn om op te lossen.
+
+Door deze stageopdracht heb ik wel veel geleerd over wat een migratie precies inhoudt, en wat hier voor nodig is. Mocht ik later tijdens mijn werk een soortgelijke opdracht krijgen, dan kan ik de kennis die ik tijdens mijn stage heb opgedaan hier goed voor gebruiken. Ik denk daarom ook dat nu ik weet hoe complex een migratie kan zijn, ik de volgende keer wel een veel nauwkeurigere planning hiervoor kan maken.
 
 ## Feedback
 
-## Reflectie
