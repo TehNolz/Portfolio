@@ -166,7 +166,7 @@ Door deze stageopdracht heb ik wel veel geleerd over wat een migratie precies in
 ==TODO feedback==
 
 # Reflectie
-
+  
 ==TODO reflectie feedback==
 
 Ik vond dit een erg leuk, uitdagend, en vooral zeer interresant project om aan te werken. Ik ben heel veel nieuwe dingen tegengekomen; ik had nog nooit met ASP.NET gewerkt, ik had nog nooit met Blazor gewerkt, ik had nog nooit een migratie uitgevoerd, enzovoort. Ik heb na het uitvoeren van de taken die ik binnen dit project heb gedaan sowieso het idee dat ik dankzij deze stageopdracht een betere programmeur ben geworden. De kennis die ik tijdens mijn stage heb opgedaan zal dan ook erg goed van pas komen tijdens de rest van mijn studie, later tijdens mijn werk, en bij mijn eigen hobbyprojecten.
