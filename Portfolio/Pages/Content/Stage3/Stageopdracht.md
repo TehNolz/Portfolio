@@ -90,13 +90,7 @@ Dat het systeem kan worden opgestart, betekent natuurlijk niet dat alles naar be
 3. Er ontstonden errors op meerdere paginas omdat zij niet meer informatie over de huidig ingelogde gebruiker konden ophalen. Dit heb ik opgelost door deze paginas te koppelen aan het eerder genoemde vernieuwde inlogsysteem.
 4. Ook in de JavaScript code van het CRM waren fouten opgetreden. Zo konden sommige paginas niet goed data versturen naar het CRM, en ontstonden er errors op andere paginas omdat bepaalde functies niet meer konden worden gevonden. Ook al heb ik zelf weinig ervaring met JavaScript, is het mij toch gelukt om deze errors op te lossen.
 
-==TODO Laatste paar dingen van stageopdracht==
-
-## Feedback
-
-## Reflectie
-
-# Planning & Reflectie
+# Planning
 Aan het begin van mijn stage heb ik een planning gemaakt die beschrijft hoe lang ik verwacht met elk van de bovenstaande taken bezig te zijn. Deze planning is als volgt;
 
 +---------+--------------------------------------+-----------------------------------------------------------------------------+
@@ -166,5 +160,15 @@ Het is mij echter niet gelukt om mij aan deze planning te houden. Dit komt omdat
 
 Door deze stageopdracht heb ik wel veel geleerd over wat een migratie precies inhoudt, en wat hier voor nodig is. Mocht ik later tijdens mijn werk een soortgelijke opdracht krijgen, dan kan ik de kennis die ik tijdens mijn stage heb opgedaan hier goed voor gebruiken. Ik denk daarom ook dat nu ik weet hoe complex een migratie kan zijn, ik de volgende keer wel een veel nauwkeurigere planning hiervoor kan maken.
 
-## Feedback
 
+# Feedback
+
+==TODO feedback==
+
+# Reflectie
+
+==TODO reflectie feedback==
+
+Ik vond dit een erg leuk, uitdagend, en vooral zeer interresant project om aan te werken. Ik ben heel veel nieuwe dingen tegengekomen; ik had nog nooit met ASP.NET gewerkt, ik had nog nooit met Blazor gewerkt, ik had nog nooit een migratie uitgevoerd, enzovoort. Ik heb na het uitvoeren van de taken die ik binnen dit project heb gedaan sowieso het idee dat ik dankzij deze stageopdracht een betere programmeur ben geworden. De kennis die ik tijdens mijn stage heb opgedaan zal dan ook erg goed van pas komen tijdens de rest van mijn studie, later tijdens mijn werk, en bij mijn eigen hobbyprojecten.
+
+Helaas is het mij niet gelukt om de gehele stageopdracht af te ronden. Dit komt grotendeels door de schaal van het project. Vanaf het begin van mijn stage werd er al tegen mij verteld dat dit geen eenmansproject is, omdat het CRM systeem simpelweg te groot is. Halverwege mijn stage kreeg ik daarom ook hulp van een aantal andere medewerkers van Ranshuijsen, die een deel van het werk op zich namen. Zij zijn op dit moment nog steeds bezig met het afronden van dit project.
