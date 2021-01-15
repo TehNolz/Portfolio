@@ -9,7 +9,7 @@ In 2009 is Ranshuijsen opgericht door Rim Ranshuijsen met als doel om samen met 
 Ik heb dit bedrijf gekozen als stageplek omdat zij veel met Microsoft technologieen werken, zoals C#, .NET, Blazor, en ASP.NET, waar ik erg geïnteresseerd in ben.
 
 ## Stageopdracht
-Ranshuijsen heeft op het moment een zelfgemaakte Custom Relations Management (CRM) systeem in gebruik. Hierin beheren zij allerlei verschillende zaken, zoals klantgegevens en de werkuren van medewerkers. 
+Ranshuijsen heeft op het moment van schrijven een zelfgemaakte Custom Relations Management (CRM) systeem in gebruik. Hierin beheren zij allerlei verschillende zaken, zoals klantgegevens en de werkuren van medewerkers. 
 
 Op het moment is het systeem gemaakt met behulp van ASP.NET MVC. Ranshuijsen is van plan om dit systeem over te zetten naar het nieuwere .NET Core en Blazor. Tijdens mijn stage heb ik ze hierbij ondersteund. De werkzaamheden die ik hierbij heb verricht en hoe ik deze heb aangepakt zijn [hier te vinden.](Content/Stage3/Stageopdracht)
 
@@ -25,7 +25,7 @@ Aan het begin van mijn stage heb ik meerdere leerdoelen voor mijzelf gesteld. De
   * [Leerdoel 4 - Advies](Content/Stage3/Leerdoelen/4)
 * Ontwerpen
   * [Leerdoel 5 - Testen](Content/Stage3/Leerdoelen/5)
-  * [Leerdoel 6 - Ideeën uitwerken](Content/Stage3/Leerdoelen/6)
+  * [Leerdoel 6 - Wijzigingen ontwerpen](Content/Stage3/Leerdoelen/6)
 * Realiseren
   * [Leerdoel 7 - Design Patterns](Content/Stage3/Leerdoelen/7)
   * [Leerdoel 8 - Nieuwe Technologie](Content/Stage3/Leerdoelen/8)

@@ -59,7 +59,7 @@ Vervolgens heb ik verschillende kleine paginas 1 voor 1 overgezet. Dit waren voo
 ### Authenticatie
 In principe bestond het CRM nu uit twee websites; de oude ASP.NET MVC website, en de vernieuwde Blazor website. Beide websites hadden echter hun eigen inlogsysteem, wat betekende dat gebruikers twee keer zouden moeten inloggen om beide systemen te kunnen gebruiken. Dit was natuurlijk onhandig voor de gebruiker, en dit moest daarom worden opgelost.
 
-Ik heb een aantal dagen besteed aan het zoeken naar een oplossingen, en heb mijn vindingen verwerkt in een ontwerpdocument waarin ik de twee mogelijkheden beschreef die ik had bedacht. Deze mogelijkheden waren als volgt;  
+Ik heb een aantal dagen besteed aan het zoeken naar een oplossingen, en heb mijn vindingen verwerkt in een ontwerpdocument waarin ik de twee mogelijkheden beschreef die ik had bedacht. Dit document kon ik ook gelijk gebruiken als bewijsmateriaal voor [Leerdoel 6](Content/Stage3/Leerdoelen/6). De mogelijkheden die ik had gevonden zijn als volgt;  
   
 1. Het was mogelijk om de inlogpagina van het oude systeem te koppelen met het inlogsysteem van de Blazor website. Hiervoor hadden wij echter een API Endpoint nodig in de Blazor website, terwijl je over het algemeen geen API gebruikt in Blazor.
 2. Het was mogelijk om de nieuwe loginpagina van de Blazor website te koppelen met het oude inlogsysteem. Hier konden wij de bestaande API Endpoint in het oude systeem voor gebruiken.

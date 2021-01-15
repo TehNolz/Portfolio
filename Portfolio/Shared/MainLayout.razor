@@ -1,79 +1,72 @@
 ﻿@inherits LayoutComponentBase
 
-@using System.Reflection
 @using Microsoft.AspNetCore.Components
-@inject IJSRuntime Js
 
 <MatThemeProvider Theme="@theme">
 
-	<MatAnchorUtils></MatAnchorUtils>
-	<MatAppBar Style="z-index: 100;" Class="mat">
-		<MatAppBarRow>
-			<MatAppBarSection>
-				<MatIconButton Icon="menu" OnClick="@((e) => MenuButtonClicked())"></MatIconButton>
-				<MatHidden BreakPoint="@MatBreakpoint.XS" Direction="@MatHiddenDirection.Down">
-					<MatAppBarTitle>Portfolio - Niels van de Kerkhof</MatAppBarTitle>
-				</MatHidden>
-				<MatHidden BreakPoint="@MatBreakpoint.SM" Direction="@MatHiddenDirection.Up">
-					<MatAppBarTitle>Portfolio</MatAppBarTitle>
-				</MatHidden>
-			</MatAppBarSection>
-		</MatAppBarRow>
-	</MatAppBar>
+    <MatAnchorUtils></MatAnchorUtils>
+    <MatAppBar Style="z-index: 100;" Class="mat">
+        <MatAppBarRow>
+            <MatAppBarSection>
+                <MatIconButton Icon="menu" OnClick="@((e) => MenuButtonClicked())"></MatIconButton>
+                <MatHidden BreakPoint="@MatBreakpoint.XS" Direction="@MatHiddenDirection.Down">
+                    <MatAppBarTitle>Portfolio - Niels van de Kerkhof</MatAppBarTitle>
+                </MatHidden>
+                <MatHidden BreakPoint="@MatBreakpoint.SM" Direction="@MatHiddenDirection.Up">
+                    <MatAppBarTitle>Portfolio</MatAppBarTitle>
+                </MatHidden>
+            </MatAppBarSection>
+        </MatAppBarRow>
+    </MatAppBar>
 
-	<MatDrawerContainer Style="width: 100vw; height: 100vh;" Class="mat">
+    <MatDrawerContainer Style="width: 100vw; height: 100vh;" Class="mat">
 
-		<MatHidden Breakpoint="@MatBreakpoint.SM" Direction="@MatHiddenDirection.Up" HiddenChanged="@ModelDrawerHiddenChanged">
-			<ChildContent>
-				<MatDrawer @bind-Opened="@_navMenuOpened" Mode="@MatDrawerMode.Modal">
-					<MatAppBarAdjust/>
-					<NavMenu />
-				</MatDrawer>
-			</ChildContent>
-			<ElseContent>
-				<MatDrawer @bind-Opened="@_navMenuOpened" Mode="@MatDrawerMode.Dismissible">
-					<MatAppBarAdjust/>
-					<NavMenu />
-				</MatDrawer>
-			</ElseContent>
-		</MatHidden>
+        <MatHidden Breakpoint="@MatBreakpoint.SM" Direction="@MatHiddenDirection.Up" HiddenChanged="@ModelDrawerHiddenChanged">
+            <ChildContent>
+                <MatDrawer @bind-Opened="@_navMenuOpened" Mode="@MatDrawerMode.Modal">
+                    <MatAppBarAdjust />
+                    <NavMenu />
+                </MatDrawer>
+            </ChildContent>
+            <ElseContent>
+                <MatDrawer @bind-Opened="@_navMenuOpened" Mode="@MatDrawerMode.Dismissible">
+                    <MatAppBarAdjust />
+                    <NavMenu />
+                </MatDrawer>
+            </ElseContent>
+        </MatHidden>
 
-		<MatDrawerContent Class="mdc-theme--background">
-			<MatAppBarAdjust/>
-			<div style="
-					padding-top: 40px;
-					padding-right: 20vw;
-					padding-left: 1vw;
-					padding-bottom: 40px;
-				">
-					@Body
-				</div>
-		</MatDrawerContent>
+        <MatDrawerContent Class="mdc-theme--background">
+            <MatAppBarAdjust />
+            <div style="
+				padding-top: 40px;
+				padding-right: 20vw;
+				padding-left: 1vw;
+				padding-bottom: 40px;
+			">
+                @Body
+            </div>
+        </MatDrawerContent>
 
-	</MatDrawerContainer>
+    </MatDrawerContainer>
 </MatThemeProvider>
 
 
 @code {
-	MatTheme theme = new MatTheme()
-	{
-		Primary = "#0277bd",
-		Secondary = "#0277bd"
-	};
+    MatTheme theme = new MatTheme()
+    {
+        Primary = "#0277bd",
+        Secondary = "#0277bd"
+    };
 
-	bool _navMenuOpened = true;
-	protected void ModelDrawerHiddenChanged(bool hidden)
-	{
-			_navMenuOpened = hidden;
-	}
-	void MenuButtonClicked()
-	{
-		_navMenuOpened = !_navMenuOpened;
-		StateHasChanged();
-	}
-
-	protected override async Task OnAfterRenderAsync(bool firstRender)
-	{
-		await base.OnAfterRenderAsync(firstRender);
-	}
+    bool _navMenuOpened = true;
+    protected void ModelDrawerHiddenChanged(bool hidden)
+    {
+        _navMenuOpened = hidden;
+    }
+    void MenuButtonClicked()
+    {
+        _navMenuOpened = !_navMenuOpened;
+        StateHasChanged();
+    }
 }

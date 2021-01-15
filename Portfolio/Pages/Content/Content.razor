@@ -2,12 +2,13 @@
 @using System.Diagnostics
 
 @inject IDocumentService DocumentService
+@inject IJSRuntime JSRuntime
 
 @{
     //Retrieve the markdown document. If it doesn't exist, show a 404 page and print the path to the console (for debugging)
-    var document = DocumentService.GetDocument(DocumentPath);
+    var document = DocumentService.GetDocument(Route.Replace('/', '.'));
     if (document != null)
-    {   
+    {
         <style>
             table, th, td {
                 border: 1px solid black;
@@ -28,7 +29,7 @@
     else
     {
         Debug.Print($"Can't find file: {Route}");
-        <_404/>
+        <_404 />
     }
 }
 
@@ -38,10 +39,4 @@
     /// </summary>
     [Parameter]
     public string Route { get; set; }
-
-    /// <summary>
-    /// The path to the embedded resource
-    /// </summary>
-    /// <returns></returns>
-    public string DocumentPath => Route.Replace('/', '.');
 }
