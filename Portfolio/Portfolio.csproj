@@ -44,7 +44,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="wwwroot\Assets\Images\Cursus.PNG" />
     <EmbeddedResource Include="Pages\Content\Stage3\Index.md" />
     <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\1.md" />
     <EmbeddedResource Include="Pages\Content\Stage3\Leerdoelen\2.md" />
