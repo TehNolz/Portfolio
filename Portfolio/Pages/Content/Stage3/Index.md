@@ -11,7 +11,7 @@ Ik heb dit bedrijf gekozen als stageplek omdat zij veel met Microsoft technologi
 ## Stageopdracht
 Ranshuijsen heeft op het moment van schrijven een zelfgemaakte Custom Relations Management (CRM) systeem in gebruik. Hierin beheren zij allerlei verschillende zaken, zoals klantgegevens en de werkuren van medewerkers. 
 
-Op het moment is het systeem gemaakt met behulp van ASP.NET MVC. Ranshuijsen is van plan om dit systeem over te zetten naar het nieuwere .NET Core en Blazor. Tijdens mijn stage heb ik ze hierbij ondersteund. De werkzaamheden die ik hierbij heb verricht en hoe ik deze heb aangepakt zijn [hier te vinden.](Content/Stage3/Stageopdracht)
+Op het moment is het systeem gemaakt met behulp van ASP.NET MVC. Ranshuijsen is van plan om dit systeem over te zetten naar het nieuwere .NET Core en Blazor. Tijdens mijn stage heb ik ze hierbij ondersteund. Zo heb ik bijvoorbeeld een deel van het systeem omgezet naar ASP.NET Core, zodat deze vervolgens gemigreerd kon worden naar Blazor. Meer informatie over mijn werkzaamheden is [hier te vinden.](Content/Stage3/Stageopdracht)
 
 ## Leerdoelen
 Aan het begin van mijn stage heb ik meerdere leerdoelen voor mijzelf gesteld. De onderstaande paginas beschrijven deze leerdoelen, en wat mijn voortgang hierbij was. Ook staat er bij elk leerdoel een stukje feedback dat ik van mijn bedrijfsbegeleider heb ontvangen.
