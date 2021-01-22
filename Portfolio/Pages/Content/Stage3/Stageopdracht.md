@@ -1,6 +1,6 @@
 ﻿# Het CRM
 
-Ranshuijsen heeft op het moment een zelfgemaakte Custom Relations Management (CRM) systeem in gebruik. Hierin beheren zij allerlei verschillende zaken, zoals bijvoorbeeld;
+Ranshuijsen heeft op het moment van schrijven een zelfgemaakte Custom Relations Management (CRM) systeem in gebruik. Hierin beheren zij allerlei verschillende zaken, zoals bijvoorbeeld;
 * Gegevens van klanten, zoals contactpersonen, adressen, en andere data,
 * Werkuren, vakantiedagen, ziekteverlof, e.d. van medewerkers.
 * De inventarisatie van alle elektronica en hardware binnen het bedrijf.
