@@ -29,7 +29,7 @@ namespace Portfolio
 		public string GetDocument(string path, bool converted = true, string directory = "Portfolio.Pages.Content")
 		{
 			//Get the document, if it exists.
-			var document = Assembly.GetCallingAssembly()
+			Stream document = Assembly.GetCallingAssembly()
 				.GetManifestResourceStream($"{directory}.{path}.md");
 
 			//If it doesn't exist, this path may be referring to a folder instead. Check if there's an Index.md file at this path and retrieve it if it does.
@@ -46,9 +46,11 @@ namespace Portfolio
 			return converted ? Markdown.ToHtml(content, new MarkdownPipelineBuilder().UseAdvancedExtensions().Build()) : content;
 		}
 
-		public IEnumerable<string> ListDocuments(string directory = "Portfolio.Pages.Content") =>
-			from d in Assembly.GetCallingAssembly().GetManifestResourceNames()
-			where d.StartsWith(directory) && d.EndsWith(".md")
-			select d.Replace($"{directory}.", string.Empty);
+		public IEnumerable<string> ListDocuments(string directory = "Portfolio.Pages.Content")
+		{
+			return from d in Assembly.GetCallingAssembly().GetManifestResourceNames()
+				   where d.StartsWith(directory) && d.EndsWith(".md")
+				   select d.Replace($"{directory}.", string.Empty);
+		}
 	}
 }

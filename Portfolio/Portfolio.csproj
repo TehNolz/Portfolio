@@ -12,6 +12,7 @@
   <ItemGroup>
     <None Remove="Pages\Content\Stage3\Bewijsmateriaal\3.md" />
     <None Remove="Pages\Content\Stage3\Bewijsmateriaal\4.md" />
+    <None Remove="Pages\Content\Stage3\Bewijsmateriaal\7.md" />
     <None Remove="Pages\Content\Stage3\Stageopdracht.md" />
     <None Remove="Pages\Content\Stage3\Stageplan.md" />
     <None Remove="Pages\Content\Studies.md" />
@@ -32,6 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Pages\Content\Stage3\Bewijsmateriaal\7.md" />
     <EmbeddedResource Include="Pages\Content\Stage3\Stageopdracht.md" />
     <EmbeddedResource Include="Pages\Content\Stage3\Stageplan.md" />
     <EmbeddedResource Include="Pages\Content\Studies.md" />
@@ -62,10 +64,10 @@
   </ItemGroup>
 	
 	<ItemGroup>
-    <PackageReference Include="Markdig" Version="0.22.1" />
+    <PackageReference Include="Markdig" Version="0.23.0" />
     <PackageReference Include="MatBlazor" Version="2.8.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.1" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.4" PrivateAssets="all" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
   </ItemGroup>
