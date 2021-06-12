@@ -14,5 +14,3 @@ Daarom ben ik meer de software-kant van het ICT opgegaan, en ben de voltijd HBO 
 # Toekomstplannen
 
 Zoals eerder genoemd is het mijn doel om een zo hoog mogelijk niveau te bereiken met mijn studies. Daarom ben ik van plan om na het afronden van mijn huidige opleiding een Master opleiding te gaan volgen. Op het moment weet ik nog niet zeker welke master ik precies ga doen of waar ik deze ga volgen. Ik hoop iets te vinden dat met back-end development te maken heeft.
-
-~Laatst bijgewerkt; 10-11-2020. Is deze pagina verouderd? [Laat het mij alstublieft weten!](Contact)~

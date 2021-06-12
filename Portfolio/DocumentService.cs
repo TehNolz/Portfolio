@@ -1,4 +1,5 @@
 ﻿using Markdig;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -35,10 +36,15 @@ namespace Portfolio
 			//If it doesn't exist, this path may be referring to a folder instead. Check if there's an Index.md file at this path and retrieve it if it does.
 			if (document == null)
 			{
+				Console.WriteLine($"Can't find file: {directory}.{path}.md");
+
 				document = Assembly.GetCallingAssembly()
 					.GetManifestResourceStream($"{directory}.{path}.Index.md");
 				if (document == null)
+				{
+					Console.WriteLine($"Can't find file {directory}.{path}.Index.md");
 					return null;
+				}
 			}
 
 			//Convert the content to HTML if requested and return it.

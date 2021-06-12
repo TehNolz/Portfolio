@@ -1,31 +1,40 @@
-﻿<MatNavMenu Multi="false">
+﻿<style>
+	.mdc-list-item--selected::before {
+		background-color: var(--mdc-theme-primary);
+		opacity: 0.1;
+	}
+</style>
+
+<MatNavMenu Multi="false">
 
 	<MatNavItem Href="" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon="house"></MatIcon>&nbsp;Home&nbsp; </MatNavItem>
 
 	<MatDivider></MatDivider>
+
+	@*3rdejaars Stage*@
 	<MatNavSubMenu>
 		<MatNavSubMenuHeader>
 			<MatNavItem NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon="assignment"></MatIcon>&nbsp; 3rdejaars Stage</MatNavItem>
 		</MatNavSubMenuHeader>
 		<MatNavSubMenuList>
-			<MatNavItem Href="Content/Stage3" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon="assignment_ind"></MatIcon>&nbsp;Inleiding&nbsp; </MatNavItem>
-            <MatNavItem Href="Content/Stage3/Stageopdracht" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon="bookmark" />&nbsp;Stageopdracht&nbsp; </MatNavItem>
+			<MatNavItem Href="Content/Stage3" NavLinkMatch="NavLinkMatch.All"><MatIcon Icon="assignment_ind"></MatIcon>&nbsp;Inleiding&nbsp; </MatNavItem>
+			<MatNavItem Href="Content/Stage3/Stageopdracht" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon="bookmark" />&nbsp;Stageopdracht&nbsp; </MatNavItem>
 			<MatNavSubMenu>
 				<MatNavSubMenuHeader>
 					<MatNavItem><MatIcon Icon="assignment_ind"></MatIcon>Leerdoelen</MatNavItem>
 				</MatNavSubMenuHeader>
-                <MatNavSubMenuList>
-                    <MatNavItem Href="Content/Stage3/Leerdoelen/1" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;1 - SVN&nbsp; </MatNavItem>
-                    <MatNavItem Href="Content/Stage3/Leerdoelen/2" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;2 - CI/CD&nbsp; </MatNavItem>
-                    <MatNavItem Href="Content/Stage3/Leerdoelen/3" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;3 - Projecten Analyseren&nbsp; </MatNavItem>
-                    <MatNavItem Href="Content/Stage3/Leerdoelen/4" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;4 - Advies&nbsp; </MatNavItem>
-                    <MatNavItem Href="Content/Stage3/Leerdoelen/5" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;5 - Testen&nbsp; </MatNavItem>
-                    <MatNavItem Href="Content/Stage3/Leerdoelen/6" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;6 - Wijzigingen ontwerpen&nbsp; </MatNavItem>
-                    <MatNavItem Href="Content/Stage3/Leerdoelen/7" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;7 - Design Patterns&nbsp; </MatNavItem>
-                    <MatNavItem Href="Content/Stage3/Leerdoelen/8" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;8 - Nieuwe Technologie&nbsp; </MatNavItem>
-                    <MatNavItem Href="Content/Stage3/Leerdoelen/9" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;9 - Regels & Procedures&nbsp; </MatNavItem>
-                    <MatNavItem Href="Content/Stage3/Leerdoelen/10" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;10 - Design&nbsp; </MatNavItem>
-                </MatNavSubMenuList>
+				<MatNavSubMenuList>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/1" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;1 - SVN&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/2" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;2 - CI/CD&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/3" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;3 - Projecten Analyseren&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/4" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;4 - Advies&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/5" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;5 - Testen&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/6" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;6 - Wijzigingen ontwerpen&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/7" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;7 - Design Patterns&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/8" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;8 - Nieuwe Technologie&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/9" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;9 - Regels & Procedures&nbsp; </MatNavItem>
+					<MatNavItem Href="Content/Stage3/Leerdoelen/10" NavLinkMatch=NavLinkMatch.Prefix><MatIcon Icon="bookmark" />&nbsp;10 - Design&nbsp; </MatNavItem>
+				</MatNavSubMenuList>
 			</MatNavSubMenu>
 			<MatNavSubMenu>
 				<MatNavSubMenuHeader>
@@ -39,7 +48,15 @@
 		</MatNavSubMenuList>
 	</MatNavSubMenu>
 
-	<MatNavItem Href="Content/Studies" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon="school"></MatIcon>&nbsp;Opleidingen&nbsp; </MatNavItem>
+	<MatNavItem Href="Content/INFProjectD" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon=@(MatIconNames.Bookmark)></MatIcon>&nbsp;Project D&nbsp; </MatNavItem>
+	<MatNavItem Href="Content/INFProjectC" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon=@(MatIconNames.Bookmark)></MatIcon>&nbsp;Project C&nbsp; </MatNavItem>
+	<MatNavItem Href="Content/INFProjectB" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon=@(MatIconNames.Bookmark)></MatIcon>&nbsp;Project B &nbsp; </MatNavItem>
+	<MatNavItem Href="Content/INFANA_PLS" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon=@(MatIconNames.Bookmark)></MatIcon>&nbsp;Public Library System&nbsp; </MatNavItem>
+	<MatNavItem Href="Content/INFANA_C4" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon=@(MatIconNames.Bookmark)></MatIcon>&nbsp;Connect 4&nbsp; </MatNavItem>
+	<MatNavItem Href="Content/INFProjectA" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon=@(MatIconNames.Bookmark)></MatIcon>&nbsp;Project A&nbsp; </MatNavItem>
+	<MatNavItem Href="Content/MISC_WoM" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon=@(MatIconNames.Bookmark)></MatIcon>&nbsp;World of Minecraft&nbsp; </MatNavItem>
+
+	<MatNavItem Href="Content/Studies" NavLinkMatch="NavLinkMatch.Prefix"><MatIcon Icon=@(MatIconNames.School)></MatIcon>&nbsp;Opleidingen&nbsp; </MatNavItem>
 
 	<MatDivider></MatDivider>
 

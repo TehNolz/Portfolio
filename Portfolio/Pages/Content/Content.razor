@@ -25,10 +25,9 @@
             }
         </style>
         @((MarkupString)document)
-    }
-    else
-    {
-        Debug.Print($"Can't find file: {Route}");
+	}
+	else
+	{
         <_404 />
     }
 }

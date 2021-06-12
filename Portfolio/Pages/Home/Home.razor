@@ -4,15 +4,81 @@
 
 <MatDivider/>
 
-<CardList Cards=@Cards/>
+<CardList Cards=@Sections/>
 
 @code {
-	public static List<CardListEntry> Cards = new List<CardListEntry>(){
+	public static List<CardListEntry> Sections = new List<CardListEntry>(){
+
+		//Ranshuijsen 3rde jaars stage
 		new CardListEntry(){
 			Title = "3rdejaars Stage",
 			ImageURL = "Assets/Images/Stage3-Ranshuijsen.jpg",
-			Subtitle = "Mijn 3rdejaars stage bij Ranshuijsen",
+			Subtitle = "2020-2021",
+			Content = "Mijn 3rdejaars stage bij Ranshuijsen",
 			HrefURL = "Content/Stage3"
-		}
+		},
+
+		//Informatica project D
+		new CardListEntry(){
+			Title = "Project D: Fire Chat",
+			ImageURL = "Assets/Images/ProjectD_thumbnail.png",
+			Subtitle = "2020",
+			Content = "Een self-healing communicatiesysteem voor de Rotterdam Rijnmond Meldkamer",
+			HrefURL = "Content/INFProjectD",
+		},
+
+		//Informatica project C
+		new CardListEntry(){
+			Title = "Project C: Ultimate Data",
+			Subtitle = "2019-2020",
+			ImageURL = "Assets/Images/ProjectC_thumbnail.png",
+			Content = "Een dataregistratiesysteem voor ZZP'ers en MKBs",
+			HrefURL = "Content/INFProjectC",
+		},
+
+		//Informatica project B
+		new CardListEntry(){
+			Title = "Project B: MyTechLab",
+			Subtitle = "2019",
+			ImageURL = "Assets/Images/ProjectB_thumbnail.png",
+			Content = "Inventariesatie app voor het Hogeschool Rotterdam TechLab",
+			HrefURL = "Content/INFProjectB",
+		},
+
+		//Public Library System
+		new CardListEntry(){
+			Title = "Public Library System",
+			Subtitle = "2019",
+			ImageURL = "Assets/Images/PLS_thumbnail.png",
+			Content = "Een bibliotheek management systeem.",
+			HrefURL = "Content/INFANA_PLS",
+		},
+
+		//Connect4
+		new CardListEntry(){
+			Title = "Connect 4",
+			Subtitle = "2018",
+			ImageURL = "Assets/Images/Connect4_thumbnail.png",
+			Content = "Een Python implementatie van Vier-op-een-Rij, met online multiplayer.",
+			HrefURL = "Content/INFANA_C4",
+		},
+
+		//Informatica project A
+		new CardListEntry(){
+			Title = "Project A: The Ultimate Challenge",
+			Subtitle = "2018-2019",
+			ImageURL = "Assets/Images/ProjectA_thumbnail.jpg",
+			Content = "Strategisch bordspel met digitaal component",
+			HrefURL = "Content/INFProjectA",
+		},
+
+		//WoM
+		new CardListEntry(){
+			Title = "World of Minecraft",
+			Subtitle = "2020",
+			ImageURL = "Assets/Images/WoM_logo.png",
+			Content = "Een van de oudste Minecraft communities.",
+			HrefURL = "Content/MISC_WoM",
+		},
 	};
 }
