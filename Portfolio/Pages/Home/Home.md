@@ -1,6 +1,6 @@
 # Introductie
 
-Hallo! Mijn naam is Niels van de Kerkhof. Ik ben 23 jaar oud, en woon op het moment in Zwijndrecht.
+Hallo! Mijn naam is Niels van de Kerkhof. Ik ben 24 jaar oud, en woon op het moment in Zwijndrecht.
 
 Mijn interesses liggen voornamelijk in computers en videogames. Ik ben geinterreseerd in vrijwel alles wat met computers te maken heeft; van netwerken tot programmeren.
 
